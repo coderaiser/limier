@@ -1,6 +1,6 @@
 # limier [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL]
 
-Right-to-left conditional function composition. Get [some][someURL] result of [filter][filterURL] functions call.
+Find string in list by pattern. This is how open in `Chrome Developer Tools` and `WebStorm` works.
 
 ## Install
 
