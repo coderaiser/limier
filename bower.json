@@ -1,0 +1,29 @@
+{
+  "name": "somefilter",
+  "version": "1.0.0",
+  "homepage": "https://github.com/coderaiser/somefilter",
+  "authors": [
+    "coderaiser <mnemonic.enemy@gmail.com>"
+  ],
+  "description": "find string in list by pattern",
+  "main": "lib/somefilter.js",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "find",
+    "search",
+    "list",
+    "pattern",
+    "array"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
