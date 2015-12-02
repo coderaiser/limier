@@ -24,7 +24,6 @@ limier('bwiw', ['hello', 'biggestWordInAWorld']);
 limier('abc', ['hello', 'biggestWordInAWorld']);
 // returns
 []
-
 ```
 
 ## License
