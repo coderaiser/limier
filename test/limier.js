@@ -17,6 +17,13 @@ test('pattern search', t => {
     t.end();
 });
 
+test('pattern search: no result', t => {
+    let result = limier('abc', ['hello', 'biggestWordInAWorld']);
+    
+    t.deepEqual(result, []);
+    t.end();
+});
+
 test('arguments: no', t => {
     t.throws(limier, /pattern should be string!/, 'should throw when no pattern');
     t.end();
