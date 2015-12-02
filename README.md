@@ -11,7 +11,7 @@ npm i limier --save
 ## How to use?
 
 ```js
-let limier      = require('limier');
+let limier = require('limier');
 
 limier('hello', ['hello', 'world']);
 // returns
