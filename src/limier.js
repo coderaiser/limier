@@ -1,8 +1,8 @@
 'use strict';
 
-let somefilter  = require('somefilter');
-let checkResult = value => value && value.length;
-let limier      = somefilter(checkResult, [
+const somefilter  = require('somefilter');
+const checkResult = value => value && value.length;
+const limier      = somefilter(checkResult, [
     findByAbr,
     findByName
 ]);
@@ -20,8 +20,8 @@ function findByName(str, names) {
 }
 
 function findByAbr(str, names) {
-    let regstr = str.split('').join('.*') + '.*';
-    let regexp = RegExp(`^${ regstr }$`, 'i');
+    const regstr = str.split('').join('.*') + '.*';
+    const regexp = RegExp(`^${ regstr }$`, 'i');
     
     return names.filter(name =>
         regexp.test(name)
