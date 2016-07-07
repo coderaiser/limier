@@ -14,8 +14,8 @@ module.exports = function(pattern, list) {
 };
 
 function findByName(str, names) {
-    return names.filter(name =>
-        ~name.indexOf(str)
+    return names.filter((name) =>
+         name.includes(str)
     );
 }
 
