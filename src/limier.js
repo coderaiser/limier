@@ -1,13 +1,13 @@
 'use strict';
 
-const somefilter  = require('somefilter');
+const somefilter = require('somefilter');
 const checkResult = value => value && value.length;
-const limier      = somefilter(checkResult, [
+const limier = somefilter(checkResult, [
     findByAbr,
     findByName
 ]);
 
-module.exports = function(pattern, list) {
+module.exports = (pattern, list) => {
     check(pattern, list);
     
     return limier(pattern, list) || [];
@@ -35,3 +35,4 @@ function check(pattern, list) {
     if (!Array.isArray(list))
         throw Error('list should be an array!');
 }
+
