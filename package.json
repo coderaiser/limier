@@ -1,6 +1,6 @@
 {
   "name": "limier",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "find string in list by pattern",
   "main": "lib/limier.js",
   "scripts": {

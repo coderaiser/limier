@@ -1,3 +1,19 @@
+2018.02.22, v1.0.2
+
+feature:
+- (package) babel-preset-env v1.6.1
+- (package) somefilter v2.0.0
+- (package) browserify v16.0.0
+- (package) browserify v15.2.0
+- (package) browserify v14.0.0
+- (package) redrun v5.0.0
+- (limier) findByName: ~indexOf -> includes
+- (package) redrun v4.0.0
+- (package) npm-run-all -> redrun
+- (package) jscs v3.0.3
+- (package) browserify v13.0.0
+
+
 2015.12.02, v1.0.1
 
 feature:
