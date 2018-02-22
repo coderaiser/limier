@@ -1,8 +1,7 @@
 'use strict';
 
-const somefilter = require('somefilter');
-const checkResult = value => value && value.length;
-const limier = somefilter(checkResult, [
+const somefilter = require('somefilter/legacy');
+const limier = somefilter([
     findByAbr,
     findByName
 ]);

@@ -48,6 +48,6 @@
     "tape": "^4.2.0"
   },
   "dependencies": {
-    "somefilter": "~1.0.0"
+    "somefilter": "^2.0.0"
   }
 }
