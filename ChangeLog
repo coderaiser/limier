@@ -1,3 +1,14 @@
+2018.03.02, v2.0.0
+
+fix:
+- (limier) search by abbreviation
+
+feature:
+- (readme) add coverage
+- (package) add coverage
+- (limier) drop support of browserify
+
+
 2018.02.22, v1.0.2
 
 feature:
