@@ -5,7 +5,7 @@ node_js:
     - 9
 
 script:
-  - npm run codestyle
+  - npm run lint
   - npm test
 
 notifications:
@@ -14,3 +14,4 @@ notifications:
         on_failure: change
 
 sudo: false
+

@@ -7,7 +7,7 @@
     "test": "tape test/*.js",
     "coverage": "nyc npm test",
     "report": "nyc report --reporter=text-lcov | coveralls",
-    "lint": "redrun eslint",
+    "lint": "eslint lib test",
     "build": "redrun clean 6to5",
     "6to5": "babel lib -d legacy",
     "wisdom": "npm run build",
