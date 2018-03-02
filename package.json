@@ -8,10 +8,11 @@
     "coverage": "nyc npm test",
     "report": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint lib test",
-    "build": "redrun clean 6to5",
+    "build": "redrun clean 6to5 legacy",
     "6to5": "babel lib -d legacy",
     "wisdom": "npm run build",
-    "clean": "rimraf dist/* legacy"
+    "clean": "rimraf legacy",
+    "legacy": "echo \"module.exports = require('./limier');\" > legacy/index.js"
   },
   "repository": {
     "type": "git",
