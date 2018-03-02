@@ -4,6 +4,7 @@ fix:
 - (limier) search by abbreviation
 
 feature:
+- (package) add legacy
 - (readme) add coverage
 - (package) add coverage
 - (limier) drop support of browserify
