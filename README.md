@@ -1,4 +1,4 @@
-# limier [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL]
+# limier [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL] [![Coverage Status][CoverageIMGURL]][CoverageURL]
 
 Find string in list by pattern. This is how open in `Chrome Developer Tools` and `WebStorm` works.
 
@@ -46,4 +46,7 @@ MIT
 [BuildStatusURL]:           https://travis-ci.org/coderaiser/limier  "Build Status"
 [DependencyStatusURL]:      https://gemnasium.com/coderaiser/limier "Dependency Status"
 [LicenseURL]:               https://tldrlegal.com/license/mit-license "MIT License"
+
+[CoverageURL]:              https://coveralls.io/github/coderaiser/limier?branch=master
+[CoverageIMGURL]:           https://coveralls.io/repos/coderaiser/limier/badge.svg?branch=master&service=github
 
