@@ -11,7 +11,7 @@ npm i limier --save
 ## How to use?
 
 ```js
-let limier = require('limier');
+const limier = require('limier');
 
 limier('hello', ['hello', 'world']);
 // returns
@@ -24,6 +24,14 @@ limier('bwiw', ['hello', 'biggestWordInAWorld']);
 limier('abc', ['hello', 'biggestWordInAWorld']);
 // returns
 []
+```
+
+## Environments
+
+In old `node.js` environments that not fully supports `es2015`, `limier` could be used with:
+
+```js
+var limier = require('limier/legacy');
 ```
 
 ## License

@@ -5,19 +5,11 @@
   "main": "lib/limier.js",
   "scripts": {
     "test": "tape test/*.js",
-    "jscs": "jscs --esnext src test",
-    "jshint": "jshint src test",
-    "codestyle": "redrun jshint jscs",
-    "build": "redrun clean 6to5 bundle bundle:es6 minify",
-    "minify": "minify dist/limier.js > dist/limier.min.js",
-    "6to5": "babel -d lib src",
+    "lint": "redrun eslint",
+    "build": "redrun clean 6to5",
+    "6to5": "babel lib -d legacy",
     "wisdom": "npm run build",
-    "jscs-fix": "npm run jscs --fix",
-    "clean": "rimraf lib/* dist/*",
-    "bundle:base": "browserify -s limier --ng false",
-    "bundle": "npm run bundle:base -- -r ./lib/limier.js:limier ./lib/limier.js -o dist/limier.js",
-    "bundle:es6:base": "npm run bundle:base -- -r ./src/limier.js:limier ./src/limier.js",
-    "bundle:es6": "npm run bundle:es6:base -- -o dist/limier.es6.js"
+    "clean": "rimraf dist/* legacy"
   },
   "repository": {
     "type": "git",
@@ -39,10 +31,7 @@
   "devDependencies": {
     "babel-cli": "^6.1.1",
     "babel-preset-env": "^1.6.1",
-    "browserify": "^16.0.0",
-    "jscs": "~3.0.3",
-    "jshint": "^2.8.0",
-    "minify": "^3.0.1",
+    "eslint": "^4.18.1",
     "redrun": "^5.0.1",
     "rimraf": "^2.4.3",
     "tape": "^4.2.0"

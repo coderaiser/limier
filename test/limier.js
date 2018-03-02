@@ -1,6 +1,6 @@
 'use strict';
 
-const limier = require('../src/limier');
+const limier = require('..');
 const test = require('tape');
 
 test('direct search', (t) =>{
@@ -10,7 +10,7 @@ test('direct search', (t) =>{
     t.end();
 });
 
-test('pattern search', (t) =>{
+test.only('pattern search', (t) =>{
     const result = limier('bwiw', ['hello', 'biggestWordInAWorld']);
     
     t.deepEqual(result, ['biggestWordInAWorld']);
