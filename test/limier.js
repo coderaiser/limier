@@ -10,7 +10,7 @@ test('direct search', (t) =>{
     t.end();
 });
 
-test.only('pattern search', (t) =>{
+test('pattern search', (t) =>{
     const result = limier('bwiw', ['hello', 'biggestWordInAWorld']);
     
     t.deepEqual(result, ['biggestWordInAWorld']);
@@ -35,3 +35,4 @@ test('arguments: no list', (t) =>{
     t.throws(fn, /list should be an array!/, 'should throw when no list');
     t.end();
 });
+
