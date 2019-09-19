@@ -7,12 +7,7 @@
     "test": "tape test/*.js",
     "coverage": "nyc npm test",
     "report": "nyc report --reporter=text-lcov | coveralls",
-    "lint": "eslint lib test",
-    "build": "redrun clean 6to5 legacy",
-    "6to5": "babel lib -d legacy",
-    "wisdom": "npm run build",
-    "clean": "rimraf legacy",
-    "legacy": "echo \"module.exports = require('./limier');\" > legacy/index.js"
+    "lint": "eslint lib test"
   },
   "repository": {
     "type": "git",
@@ -32,15 +27,9 @@
   },
   "homepage": "https://github.com/coderaiser/limier",
   "devDependencies": {
-    "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
     "coveralls": "^3.0.0",
     "eslint": "^5.6.1",
-    "nyc": "^13.0.1",
-    "redrun": "^7.0.0",
-    "rimraf": "^2.4.3",
-    "tape": "^4.2.0"
+    "nyc": "^14.1.1"
   },
   "dependencies": {
     "currify": "^3.0.0",
