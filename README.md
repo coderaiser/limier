@@ -26,14 +26,6 @@ limier('abc', ['hello', 'biggestWordInAWorld']);
 []
 ```
 
-## Environments
-
-In old `node.js` environments that not fully supports `es2015`, `limier` could be used with:
-
-```js
-var limier = require('limier/legacy');
-```
-
 ## License
 
 MIT
