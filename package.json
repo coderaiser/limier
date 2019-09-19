@@ -4,10 +4,11 @@
   "description": "find string in list by pattern",
   "main": "lib/limier.js",
   "scripts": {
-    "test": "tape test/*.js",
-    "coverage": "nyc npm test",
-    "report": "nyc report --reporter=text-lcov | coveralls",
-    "lint": "eslint lib test"
+    "test": "madrun test",
+    "coverage": "madrun coverage",
+    "report": "madrun report",
+    "lint": "madrun lint",
+    "fix:lint": "madrun fix:lint"
   },
   "repository": {
     "type": "git",
@@ -28,8 +29,13 @@
   "homepage": "https://github.com/coderaiser/limier",
   "devDependencies": {
     "coveralls": "^3.0.0",
-    "eslint": "^5.6.1",
-    "nyc": "^14.1.1"
+    "eslint": "^6.4.0",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-putout": "^2.0.0",
+    "madrun": "^3.0.5",
+    "nyc": "^14.1.1",
+    "putout": "^6.1.0",
+    "supertape": "^1.2.3"
   },
   "dependencies": {
     "currify": "^3.0.0",
