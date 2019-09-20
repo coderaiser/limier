@@ -39,6 +39,6 @@
   },
   "dependencies": {
     "currify": "^3.0.0",
-    "somefilter": "^2.0.0"
+    "somefilter": "^3.0.1"
   }
 }
