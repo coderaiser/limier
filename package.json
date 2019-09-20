@@ -38,7 +38,7 @@
     "supertape": "^1.2.3"
   },
   "dependencies": {
-    "currify": "^3.0.0",
+    "currify": "^4.0.0",
     "somefilter": "^3.0.1"
   }
 }
